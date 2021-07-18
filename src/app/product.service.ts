@@ -23,8 +23,8 @@ export class ProductService {
     removeProduct(id: number): Observable<TypeProduct> {
         return this.http.delete<TypeProduct>(`${this.API}/${id}`);
     }
-    updateProduct(id : number) {
-        // call api
+    updateProduct(id : number, item: TypeProduct): Observable<TypeProduct> {
+        return this.http.put<TypeProduct>(`${this.API}/${id}`, item);
     }
     getCategory() {
         // call api

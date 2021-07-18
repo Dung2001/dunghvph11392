@@ -1,3 +1,12 @@
-<p>
-    product-edit works!
-    </p>
+<h2>Sửa sản phẩm</h2>
+<form action="">
+    <div class="mb-3">
+        <label for="">Tiêu đề</label>
+        <input type="text" class="form-control" [(ngModel)]="product.name" name="name" />
+    </div>
+    <div class="mb-3">
+        <label for="">Mô tả</label>
+        <input type="text" class="form-control" [(ngModel)]="product.price" name="price" />
+    </div>
+    <button class="btn btn-primary" (click)="onEditProduct()">Edit</button>
+</form>

@@ -1,6 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { TypeProduct } from '../product/product';
 import { ProductService } from '../product.service';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-product-add',
@@ -17,12 +18,13 @@ export class ProductAddComponent implements OnInit {
         img: '',
         status: true
     };
-    constructor(private productService: ProductService) { }
+    constructor(private productService: ProductService, private router: Router) { }
 
     ngOnInit() { }
     onAddProduct() {
         // this.newProductEvent.emit(this.product);
         this.productService.addProduct(this.product).subscribe(data => {
+            this.router.navigate(['/product'])
             console.log(data);
         });
     }
