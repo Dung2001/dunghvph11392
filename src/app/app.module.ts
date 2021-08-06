@@ -14,6 +14,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
+import { HeaderAdminComponent } from './header-admin/header-admin.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule],
@@ -26,7 +27,8 @@ import { NavComponent } from './nav/nav.component';
     NotFoundComponent,
     ProductEditComponent,
     HeaderComponent,
-    NavComponent
+    NavComponent,
+    HeaderAdminComponent
   ],
   bootstrap: [AppComponent],
   providers: [ProductService]

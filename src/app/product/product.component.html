@@ -1,3 +1,4 @@
+<app-header-admin></app-header-admin>
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
     <h1 class="h2">Dashboard</h1>
     <div class="btn-toolbar mb-2 mb-md-0">
@@ -17,6 +18,8 @@
             <tr>
                 <th>STT</th>
                 <th>Tiêu đề</th>
+                <th>Ảnh</th>
+                <th>Gia</th>
                 <th>Mô tả</th>
                 <th></th>
             </tr>
@@ -25,7 +28,11 @@
             <tr *ngFor="let product of products;index as i">
                 <td>{{i + 1}}</td>
                 <td>{{product.name}}</td>
-                <td>{{product.price}}</td>
+                <td>
+                    <img style="width: 100px; height:auto" src="{{product.img}}" alt="">
+                </td>
+               <td>{{product.price}}</td>
+                <td>{{product.desc}}</td>
                 <td>
                     <button class="btn btn-danger btn-sm" (click)="onHandleRemove(product.id)">
                         Delete

@@ -1,12 +1,21 @@
+<app-header-admin></app-header-admin>
+<div>a</div>
+<div>a</div>
+<div>a</div>
+
 <h2>Sửa sản phẩm</h2>
 <form action="">
     <div class="mb-3">
-        <label for="">Tiêu đề</label>
+        <label for="">Ten SP</label>
         <input type="text" class="form-control" [(ngModel)]="product.name" name="name" />
     </div>
     <div class="mb-3">
-        <label for="">Mô tả</label>
-        <input type="text" class="form-control" [(ngModel)]="product.price" name="price" />
+        <label for="">Gia</label>
+        <input type="number" class="form-control" [(ngModel)]="product.price" name="price" />
+    </div>
+    <div class="mb-3">
+        <label for="">Mo ta</label>
+        <input type="text" class="form-control" [(ngModel)]="product.desc" name="desc" />
     </div>
     <button class="btn btn-primary" (click)="onEditProduct()">Edit</button>
 </form>

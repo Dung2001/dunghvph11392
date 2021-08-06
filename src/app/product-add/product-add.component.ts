@@ -15,8 +15,9 @@ export class ProductAddComponent implements OnInit {
         id: 0,
         name: '',
         price: 0,
-        img: '',
-        status: true
+        img: 'https://salt.tikicdn.com/cache/280x280/ts/product/89/a2/66/69f041ba7b0cb97acc01f52ac9ab5c40.jpg',
+        status: true,
+        desc: ''
     };
     constructor(private productService: ProductService, private router: Router) { }
 

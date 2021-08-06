@@ -4,4 +4,5 @@ export interface TypeProduct {
     img: string;
     price: number;
     status: boolean;
+    desc: string;
 }

@@ -1,5 +1,5 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "$schema": "node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
     "analytics": false
   },
@@ -30,10 +30,19 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "styles/vendor/bootstrap/css/bootstrap.min.css",
+              "styles/assets/css/fontawesome.css",
+              "styles/assets/css/templatemo-sixteen.css"
             ],
-            "scripts": []
+            "scripts": [
+              "styles/vendor/jquery/jquery.min.js",
+              "styles/vendor/bootstrap/js/bootstrap.bundle.min.js",
+              "styles/assets/js/custom.js",
+              "styles/assets/js/owl.js",
+              "styles/assets/js/slick.js",
+              "styles/assets/js/isotope.js",
+              "styles/assets/js/accordions.js"
+            ]
           },
           "configurations": {
             "production": {

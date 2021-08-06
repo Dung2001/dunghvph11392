@@ -14,7 +14,8 @@ export class ProductEditComponent implements OnInit {
         name: '',
         price: 0,
         img: '',
-        status: true
+        status: true,
+        desc: ''
     };
 
     constructor(private route: ActivatedRoute, private productService: ProductService, private router: Router) { }
